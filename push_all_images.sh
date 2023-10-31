@@ -12,8 +12,4 @@ for TAG in $IMAGE_TAGS; do
   skopeo copy docker://sl:$TAG docker://afaqnasir/sl-bit:$TAG
 done
 
-# Push all the copied images to the destination repository
-#for TAG in $IMAGE_TAGS; do
-#  skopeo push docker://afaqnasir/sl-bit:$TAG docker://afaqnasir/sl-bit:$TAG
-#done
 
