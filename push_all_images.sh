@@ -11,3 +11,4 @@ IMAGE_TAGS=$(skopeo inspect $SOURCE_REPOSITORY | jq -r '.RepoTags[]')
 for TAG in $IMAGE_TAGS; do
   skopeo copy $SOURCE_REPOSITORY:$TAG $DESTINATION_REPOSITORY:$TAG
 done
+
