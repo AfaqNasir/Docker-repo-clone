@@ -12,4 +12,3 @@ for TAG in $IMAGE_TAGS; do
   skopeo copy $SOURCE_REPOSITORY:$TAG $DESTINATION_REPOSITORY:$TAG
 done
 
-
